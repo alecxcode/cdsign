@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://www.purebasic.com/namespace" version="1.0" creator="PureBasic 5.70 LTS (Windows - x64)">
+  <section name="config">
+    <options closefiles="1" openmode="0" name="Contract or any document e-sign"/>
+  </section>
+  <section name="data">
+    <explorer view="C:\ProgramData\PureBasic\Examples\" pattern="0"/>
+    <log show="1"/>
+    <lastopen date="2021-03-09 20:52" user="Alexander" host="R-DESKTOP"/>
+  </section>
+  <section name="files">
+    <file name="cdsign-esign-code.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="05d0033a4c8a317ed2ef6737a82cff0a"/>
+    </file>
+    <file name="cdsign-esign-form.pbf">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="65e52fd6a0a5c285a4cb57105cad83d6"/>
+    </file>
+    <file name="cdsign-esign-make.pbf">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="1d95b7370c0b9fe56782704e6c15e35c"/>
+    </file>
+    <file name="cdsign-esign-procedures.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="16fae01e91984aa840c2f1860cc494a2"/>
+    </file>
+    <file name="cdsign-esign-progress.pbf">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="9daa257dfbf1e8ab2429c19e3dca7803"/>
+    </file>
+  </section>
+  <section name="targets">
+    <target name="Default" enabled="1" default="1">
+      <inputfile value="cdsign-esign-code.pb"/>
+      <outputfile value="cdsign-esign.exe"/>
+      <executable value="cdsign-esign.exe"/>
+      <options xpskin="1" dpiaware="1" debug="1"/>
+      <icon enable="1">cdsign.ico</icon>
+      <versioninfo enable="1">
+        <field0 value="0.9.0.0"/>
+        <field1 value="0.9.0.0"/>
+        <field2 value="VersiaSoft"/>
+        <field3 value="Sign with DS"/>
+        <field4 value="0.9.0.0"/>
+        <field5 value="0.9.0.0"/>
+        <field6 value="Sign with DS"/>
+        <field7 value="cdsign-esign.exe"/>
+        <field8 value="cdsign-esign.exe"/>
+        <field9 value="Alexander Vankov"/>
+      </versioninfo>
+    </target>
+    <target name="Release32" enabled="1" default="0">
+      <inputfile value="cdsign-esign-code.pb"/>
+      <outputfile value="cdsign-esign-32.exe"/>
+      <compiler version="PureBasic 5.70 LTS (Windows - x86)"/>
+      <executable value="cdsign-esign-32.exe"/>
+      <options xpskin="1" dpiaware="1"/>
+      <icon enable="1">cdsign.ico</icon>
+      <versioninfo enable="1">
+        <field0 value="0.9.0.0"/>
+        <field1 value="0.9.0.0"/>
+        <field2 value="VersiaSoft"/>
+        <field3 value="Sign with DS"/>
+        <field4 value="0.9.0.0"/>
+        <field5 value="0.9.0.0"/>
+        <field6 value="Sign with DS"/>
+        <field7 value="cdsign-esign.exe"/>
+        <field8 value="cdsign-esign.exe"/>
+        <field9 value="Alexander Vankov"/>
+      </versioninfo>
+    </target>
+    <target name="Release64" enabled="1" default="0">
+      <inputfile value="cdsign-esign-code.pb"/>
+      <outputfile value="cdsign-esign-64.exe"/>
+      <compiler version="PureBasic 5.70 LTS (Windows - x64)"/>
+      <executable value="cdsign-esign-64.exe"/>
+      <options xpskin="1" dpiaware="1"/>
+      <icon enable="1">cdsign.ico</icon>
+      <versioninfo enable="1">
+        <field0 value="0.9.0.0"/>
+        <field1 value="0.9.0.0"/>
+        <field2 value="VersiaSoft"/>
+        <field3 value="Sign with DS"/>
+        <field4 value="0.9.0.0"/>
+        <field5 value="0.9.0.0"/>
+        <field6 value="Sign with DS"/>
+        <field7 value="cdsign-esign.exe"/>
+        <field8 value="cdsign-esign.exe"/>
+        <field9 value="Alexander Vankov"/>
+      </versioninfo>
+    </target>
+  </section>
+</project>

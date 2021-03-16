@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://www.purebasic.com/namespace" version="1.0" creator="PureBasic 5.70 LTS (Windows - x64)">
+  <section name="config">
+    <options closefiles="1" openmode="0" name="Contract or any document e-sign check"/>
+  </section>
+  <section name="data">
+    <explorer view="C:\ProgramData\PureBasic\Examples\" pattern="0"/>
+    <log show="1"/>
+    <lastopen date="2021-03-09 20:24" user="Alexander" host="R-DESKTOP"/>
+  </section>
+  <section name="files">
+    <file name="cdsign-check-code.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="ee3c770dc1898978c58430505ffd793b"/>
+    </file>
+    <file name="cdsign-check-form.pbf">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="2e77af275d81894e330d58aed12d926e"/>
+    </file>
+    <file name="cdsign-check-procedures.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="3f237bac30fed4d2ecfa020ecc722721"/>
+    </file>
+  </section>
+  <section name="targets">
+    <target name="Default" enabled="1" default="1">
+      <inputfile value="cdsign-check-code.pb"/>
+      <outputfile value="cdsign-check.exe"/>
+      <executable value="cdsign-check.exe"/>
+      <options xpskin="1" dpiaware="1" debug="1"/>
+      <icon enable="1">cdsign.ico</icon>
+      <versioninfo enable="1">
+        <field0 value="0.8.0.0"/>
+        <field1 value="0.8.0.0"/>
+        <field2 value="VersiaSoft"/>
+        <field3 value="Проверка ЭП"/>
+        <field4 value="0.8.0.0"/>
+        <field5 value="0.8.0.0"/>
+        <field6 value="Проверка ЭП"/>
+        <field7 value="cdsign-check.exe"/>
+        <field8 value="cdsign-check.exe"/>
+        <field9 value="Alexander Vankov"/>
+      </versioninfo>
+    </target>
+    <target name="Release64" enabled="1" default="0">
+      <inputfile value="cdsign-check-code.pb"/>
+      <outputfile value="cdsign-check-64.exe"/>
+      <compiler version="PureBasic 5.70 LTS (Windows - x64)"/>
+      <executable value="cdsign-check-64.exe"/>
+      <options xpskin="1" dpiaware="1"/>
+      <icon enable="1">cdsign.ico</icon>
+      <versioninfo enable="1">
+        <field0 value="0.8.0.0"/>
+        <field1 value="0.8.0.0"/>
+        <field2 value="VersiaSoft"/>
+        <field3 value="Проверка ЭП"/>
+        <field4 value="0.8.0.0"/>
+        <field5 value="0.8.0.0"/>
+        <field6 value="Проверка ЭП"/>
+        <field7 value="cdsign-check.exe"/>
+        <field8 value="cdsign-check.exe"/>
+        <field9 value="Alexander Vankov"/>
+      </versioninfo>
+    </target>
+    <target name="Release32" enabled="1" default="0">
+      <inputfile value="cdsign-check-code.pb"/>
+      <outputfile value="cdsign-check-32.exe"/>
+      <compiler version="PureBasic 5.70 LTS (Windows - x86)"/>
+      <executable value="cdsign-check-32.exe"/>
+      <options xpskin="1" dpiaware="1"/>
+      <icon enable="1">cdsign.ico</icon>
+      <versioninfo enable="1">
+        <field0 value="0.8.0.0"/>
+        <field1 value="0.8.0.0"/>
+        <field2 value="VersiaSoft"/>
+        <field3 value="Проверка ЭП"/>
+        <field4 value="0.8.0.0"/>
+        <field5 value="0.8.0.0"/>
+        <field6 value="Проверка ЭП"/>
+        <field7 value="cdsign-check.exe"/>
+        <field8 value="cdsign-check.exe"/>
+        <field9 value="Alexander Vankov"/>
+      </versioninfo>
+    </target>
+  </section>
+</project>

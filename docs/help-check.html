@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Check document digital signature: help file</title>
+</head>
+<body>
+  <h1>Check document digital signature: how to use the app</h1>
+  <h3>Introduction</h3>
+  <div>
+    A digital signature is a mathematical scheme for verifying the authenticity of electronic documents. With this app it uses secret and public keys, and detached digital signature file.<br>
+    With secret key you can sign an electronic document, secret key should not be transferred to any other person. Public key should be given to another person in order they can verify your signature and document integrity.<br>
+    When you sign a file with a digital signature a hash is being generated, which then modified by cryptographic algorithms. This modified hash is the digital signature of a specific electronic document.<br>
+    All this is essential in order to verify (using public key and that hash) that a a specific electronic document signed by a person specified in that public key and not modified during transmission (integrity check).<br>
+    Although, this program does not utilize any certificate authority (an entity that issues digital certificates).<br>
+    This application itself does not have any cryptographic algorithms, for this purpose it utilizes another program - <a href="https://gnupg.org" target="_blank">GPG</a>. This app is basically simplified graphical user interface for GPG.<br>
+    In order to check a digital signature you need from a signing person: (1) a signed file itself, and (2) a public key of that person (if not received earlier), and (3) a digital signature file related to a signed file - all of them created with the application <b>Digitally sign a document</b>.<br>
+  </div>
+  <br>
+  <h3>Import a public key of a digital signature</h3>
+  <div>
+    Import of a public key is made during the digital signature check process, if you have selected a key file. You need to import this key if you did not import in before. Otherwise, there is no sense to import the key.<br>
+    In order to choose a public key file press <b>Import public key...</b> button. That kind of file usually has an extension of <b>.key</b>. It will be imported while checking digital signature, not other actions required.<br>
+    The imported public key will be stored in a keyring of the GPG program.<br>
+  </div>
+  <br>
+  <h3>Check a digital signature of a document</h3>
+  <div>
+    In order to check digital signature of a file and that file integrity:<br>
+    <ol>
+      <li>Launch the application</li>
+      <li>Press the button <b>Document (or contract) file...</b></li>
+      <li>Select a signed file</li>
+      <li>Press the button <b>Signature file for this document...</b> A digital signature file usually has the same name as a document file with an extension of <b>.asc</b></li>
+      <li>Select a signature file</li>
+      <li>If necessary select a public key file to import</li>
+      <li>Press the button <b>Check digital signature</b></li>
+      <li>The application should display the result</li>
+    </ol>
+  </div>
+  <br>
+  <h3>Application settings (for advanced users)</h3>
+  <div>
+    The settings are: GPG executable name.<br>
+    The settings are stored in: <b>user_home_directory/.edm/cdsign-check.ini</b><br>
+  </div>
+  <br>
+</body>
+</html>
